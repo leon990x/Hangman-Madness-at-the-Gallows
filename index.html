@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div>
+        <h1>Madness at the Gallows</h1>
+    </div>
+
+
+    <div id="gall">
+        <svg height="250" width="200" class="figure-container">
+            
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="230" x2="150" y2="230" />
+
+            <circle cx="140" cy="70" r="20" style="stroke:#2980b9;stroke-width:4" class="figure-part"/>
+
+            <line x1="140" y1="90" x2="140" y2="150" style="stroke:#2980b9;stroke-width:4" class="figure-part"/>
+
+            <line x1="140" y1="120" x2="120" y2="100" style="stroke:#2980b9;stroke-width:4" class="figure-part"/>
+            <line x1="140" y1="120" x2="160" y2="100" style="stroke:#2980b9;stroke-width:4" class="figure-part"/>
+
+            <line x1="140" y1="150" x2="120" y2="180" style="stroke:#2980b9;stroke-width:4" class="figure-part"/>
+            <line x1="140" y1="150" x2="160" y2="180" style="stroke:#2980b9;stroke-width:4" class="figure-part"/>
+        </svg>
+    </div>
+
+        <div class="wrong-letters-container">
+            <div id="wrong-letters">
+                <span></span>
+            </div>
+        </div>
+
+            <div class="word" id="word"></div>
+        </div>
+
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message">Press play to begin</h2>
+            <button id="play-button">Play</button>
+        </div>
+    </div>
+
+    <div class="notification-container" id="notification-container">
+        <p class="note-msg">You have already entered this letter</p>
+    </div>
+
+    <script src="hScript.js"></script>
+
+</body>
+</html>
